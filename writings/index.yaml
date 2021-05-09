@@ -1,0 +1,20 @@
+apple-one-more-thing-predictions:
+  slug: "one-more-thing-predictions"
+  title: "Thoughts and Predictions about Apple's upcoming 'One More Thing' Event"
+  description: "Apple is slated to annouce the new M1 SoC tomorrow, here's what I think will happen."
+  published_date: "2020-11-10"
+chia-fundamentals:
+  slug: "chia-fundamentals"
+  title: "Chia fundamentals and plotting Chia in parallel"
+  description: "A look into the fundamentals of Chia, a new cryptocurrency."
+  published_date: "2021-04-13"
+font-display:
+  slug: "font-display"
+  title: "How to think about CSS font-display"
+  description: "Web fonts can be tricky, dymistifying font-display is a step towards understanding."
+  published_date: "2021-04-14"
+static-websites:
+  slug: "static-websites"
+  title: "How I build and host static websites"
+  description: "Building simple, fast websites is easy."
+  published_date: "2021-04-22"
