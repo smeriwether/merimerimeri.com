@@ -34,7 +34,7 @@
 </section>
 
 <section class="mb-12" >
-  <% @posts.sort_by { |p| p.published_date }.each do |post| %>
+  <% @posts.sort_by { |p| p.published_date }.reverse.each do |post| %>
     <article class="rounded-lg border border-gray-200 shadow mb-6 group dark:border-gray-500">
       <a href="<%= post.slug %>.html" class="p-6 flex flex-col justify-center text-center md:p-8">
         <header class="mb-5">
