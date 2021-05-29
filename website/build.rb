@@ -51,7 +51,7 @@ def create_page(
 end
 
 def load_posts
-  Dir["./writings/*.md"].map do |file|
+  Dir["./posts/*.md"].map do |file|
     post_string = File.read(file)
     post_split = /\+\+\+(.*)\+\+\+(.*)/m.match(post_string)
     post_metadata = post_split[1]
