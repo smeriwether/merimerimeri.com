@@ -1,3 +1,10 @@
++++
+date = "2020-11-10"
+description = "Apple is slated to announce the new M1 SoC tomorrow, here's what I think will happen."
+slug = "apple-one-more-thing-predictions"
+title = "Thoughts and Predictions about Apple's upcoming 'One More Thing' Event"
++++
+
 Tomorrow (11/10/20) is Apple’s ‘One More Thing’ event 👨‍💻. [Rumors have it](https://9to5mac.com/2020/11/06/apple-november-event-apple-silicon/) 
 that we’ll see the first ARM-powered Macs. The transition to ARM has 
 a [ton of upside](https://www.macrumors.com/guide/apple-silicon/) but the 

@@ -1,3 +1,10 @@
++++
+date = "2021-04-22"
+description = "Building simple, fast websites is easy."
+slug = "static-websites"
+title = "How I build and host static websites"
++++
+
 I love building websites! I'm not talking about web apps that are more common on the 
 internet these days, whether they be single-page React apps or server-side rendered 
 Ruby on Rails apps. I'm talking about good, old fashioned websites. Websites that are 

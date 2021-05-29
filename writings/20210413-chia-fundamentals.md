@@ -1,3 +1,10 @@
++++
+date = "2021-04-13"
+description = "A look into the fundamentals of Chia, a new cryptocurrency."
+slug = "chia-fundamentals"
+title = "Chia fundamentals and plotting Chia in parallel"
++++
+
 ## What is Chia?
 
 *Skip this if you already know what Chia is*

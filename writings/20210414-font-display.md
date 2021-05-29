@@ -1,3 +1,10 @@
++++
+date = "2021-04-14"
+description = "Web fonts can be tricky, dymistifying font-display is a step towards understanding."
+slug = "font-display"
+title = "How to think about CSS font-display"
++++
+
 Web font performance is often overlooked, but can have a real impact on 
 [your website’s user experience and performance](https://www.zachleat.com/web/css-tricks-web-fonts/). 
 One of the best controls available to us is the [CSS font-display property](https://css-tricks.com/almanac/properties/f/font-display/). 

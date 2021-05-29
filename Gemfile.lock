@@ -8,6 +8,7 @@ GEM
     method_source (1.0.0)
     nokogiri (1.11.3-x86_64-darwin)
       racc (~> 1.4)
+    parslet (1.8.2)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -15,6 +16,8 @@ GEM
     rexml (3.2.5)
     rss (0.2.9)
       rexml
+    toml (0.2.0)
+      parslet (~> 1.8.0)
 
 PLATFORMS
   x86_64-darwin-20
@@ -25,6 +28,7 @@ DEPENDENCIES
   nokogiri
   pry
   rss
+  toml
 
 BUNDLED WITH
    2.2.3

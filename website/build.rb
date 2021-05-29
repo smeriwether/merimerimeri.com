@@ -4,6 +4,7 @@ require "kramdown"
 require "nokogiri"
 require "pry"
 require "rss"
+require "toml"
 require "yaml"
 
 def build_page(template_path, contents = nil)
@@ -50,16 +51,19 @@ def create_page(
 end
 
 def load_posts
-  config = YAML.load(File.read("./writings/index.yaml"))
-  config.keys.map do |file_name|
-    post_data = config[file_name]
+  Dir["./writings/*.md"].map do |file|
+    post_string = File.read(file)
+    post_split = /\+\+\+(.*)\+\+\+(.*)/m.match(post_string)
+    post_metadata = post_split[1]
+    post_content = post_split[2]
+    metadata = TOML::Parser.new(post_metadata).parsed
 
     post = OpenStruct.new
-    post.slug = post_data.dig("slug")
-    post.title = post_data.dig("title")
-    post.description = post_data.dig("description")
-    post.published_date = Date.parse(post_data.dig("published_date"))
-    post.html = Kramdown::Document.new(File.read("./writings/#{post.published_date.strftime("%Y%m%d")}-#{file_name}.md")).to_html
+    post.slug = metadata.dig("slug")
+    post.title = metadata.dig("title")
+    post.description = metadata.dig("description")
+    post.published_date = Date.parse(metadata.dig("date"))
+    post.html = Kramdown::Document.new(post_content).to_html
     post.content = Nokogiri::HTML(post.html).text.gsub("\n", "")
     post
   end
