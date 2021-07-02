@@ -4,7 +4,6 @@
   "description": "The website for merimerimeri.com",
   "scripts": {
     "build": "./website/build.sh",
-    "deploy": "./website/deploy.sh",
     "open": "open ./site/index.html"
   },
   "repository": {
