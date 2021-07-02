@@ -20,7 +20,7 @@ Using it, we’re able to tell the browser how we’d like it to render our web 
 
 Even with those definitions it can be difficult to decide what to do with the 
 web fonts on your website. Instead of thinking about how fonts are rendered, 
-I’ve found it helpful to think about what my design requires or how critical are 
+I've found it helpful to think about what my design requires or how critical are 
 the fonts to the experience of my website. With this framing, I have different 
 names to the font-display values.
 
