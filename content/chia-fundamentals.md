@@ -96,4 +96,4 @@ I'm able to create ~6 plots a day, on a spare computer, with very little hands-o
 
 
 Happy plotting! If you'd like to hear more from me you can subscribe below, [follow me on Twitter](https://twitter.com/_smeriwether), 
-or send me an email at [smeriwether@hey.com](mailto:smeriwether@hey.com). Have a great day!
+o

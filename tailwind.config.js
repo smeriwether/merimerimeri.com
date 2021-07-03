@@ -1,9 +1,9 @@
 module.exports = {
-  purge: [
-    "./website/**/*.html.erb"
-  ],
-  darkMode: "media",
-  theme: {},
+  purge: ['layouts/**/*.html'],
+  darkMode: 'media',
+  theme: {
+    extend: {},
+  },
   variants: {
     extend: {},
   },

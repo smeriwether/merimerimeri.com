@@ -1,36 +1,18 @@
 {
-  "name": "merimerimeri.com",
+  "name": "merimerimeri",
   "version": "1.0.0",
-  "description": "The website for merimerimeri.com",
+  "description": "My personal blog",
+  "main": "index.js",
   "scripts": {
-    "build": "./website/build.sh",
-    "open": "open ./site/index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/smeriwether/merimerimeri.com.git"
-  },
-  "keywords": [
-    "technology",
-    "website"
-  ],
-  "author": "Stephen Meriwether",
-  "license": "no-license",
-  "bugs": {
-    "url": "https://github.com/smeriwether/merimerimeri.com/issues"
-  },
-  "homepage": "https://github.com/smeriwether/merimerimeri.com#readme",
-  "postcss": {
-    "plugins": {
-      "tailwindcss": {},
-      "autoprefixer": {}
-    }
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@tailwindcss/forms": "^0.3.1",
-    "autoprefixer": "^10.0.2",
-    "postcss": "^8.1.8",
-    "postcss-cli": "^8.3.0",
-    "tailwindcss": "^2.0.1"
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
   }
 }

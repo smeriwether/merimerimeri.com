@@ -1,0 +1,10 @@
+baseURL = "http://merimerimeri.com/"
+languageCode = "en-us"
+title = "merimerimeri.com"
+
+[params]
+  title = "merimerimeri.com - A blog about technology, the internet, and my life."
+  description = "A blog by Stephen Meriwether about technology, the internet, and my life."
+
+[author]
+  name = "Stephen Meriwether"
