@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <main aria-role="main">
+    <section>
+      <header class="mt-20">
+        <a href="{{ .Site.BaseURL }}" class="hover:border-none" style="border: 0;">
+          <picture>
+            <source srcset="/photo.jp2" type="image/jp2">
+            <img src="/photo.jpg" class="w-32 h-32 rounded mb-2" width="128" height="128" alt="A photo of Stephen Meriwether" />
+          </picture>
+        </a>
+        <p class="mt-6 text-3xl font-bold">Hi 👋, I'm Stephen.</p>
+      </header>
+
+      <p class="mt-4">
+        This is my online home. Email me at
+        <a href="mailto:stephen@merimerimeri.com" class="link">stephen@merimerimeri.com</a>.
+      </p>
+
+    </section>
+
+    <section id="content" class="text-lg mb-10">
+      {{ .Content }}
+    </section>
+
+    <footer class="mt-10 mb-20">
+      <p>
+        You can talk to me on <a href="https://twitter.com/@_smeriwether" class="link" target="_blank" rel="noopener">Twitter</a>
+        and follow my work on <a href="https://github.com/smeriwether" class="link" target="_blank" rel="noopener">Github</a>.
+      </p>
+      <p class="mt-8">Thanks for stopping by!</p>
+    </footer>
+  </main>
+{{ end }}

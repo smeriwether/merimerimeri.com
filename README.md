@@ -1,12 +1,12 @@
 # merimerimeri.com
 
-[merimerimeri.com](https://merimerimeri.com) is my personal blog. It's a simple static site that's served 
+[merimerimeri.com](https://merimerimeri.com) is my personal website. It's a simple static site that's served 
 via [Render](https://render.com)
 
 ## Making changes
 
 This is a [Hugo](https://gohugo.io) static site. Start the server by running
-`huge server -D`, changes are automatically picked up.
+`hugo server -D`, changes are automatically picked up.
 
 ## Copyright & Fair Use
 

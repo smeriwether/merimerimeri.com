@@ -7,12 +7,16 @@
     @apply text-2xl font-bold mb-2 pt-2 md:text-3xl;
   }
 
+  #content h3 {
+    @apply text-lg font-bold mb-2 mt-10 md:text-xl;
+  }
+
   #content p {
     @apply mb-5;
   }
 
   #content ul, ol {
-    @apply ml-2 mb-5;
+    @apply ml-4 mb-5;
   }
 
   #content ul {

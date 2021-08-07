@@ -1,10 +1,16 @@
-baseURL = "http://merimerimeri.com/"
+baseURL = "https://merimerimeri.com/"
 languageCode = "en-us"
 title = "merimerimeri.com"
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [params]
-  title = "merimerimeri.com - A blog about technology, the internet, and my life."
-  description = "A blog by Stephen Meriwether about technology, the internet, and my life."
+  title = "merimerimeri.com - Stephen Meriwether's home on the internet."
+  description = "Stephen Meriwether's home on the internet and his blog where he writes about technology, the internet, and his life."
 
 [author]
   name = "Stephen Meriwether"

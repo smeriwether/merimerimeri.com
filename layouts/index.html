@@ -12,7 +12,7 @@
     </section>
 
     <section class="mb-12" >
-      {{ range .Pages }}
+      {{ range ( where site.RegularPages "Section" "blog" ) }}
         <article class="rounded-lg border border-gray-200 shadow mb-6 group dark:border-gray-500">
           <a href="{{ .Permalink }}" class="p-6 flex flex-col justify-center text-center md:p-8">
             <header class="mb-5">
