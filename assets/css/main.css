@@ -12,7 +12,7 @@
   }
 
   #content p {
-    @apply mb-5;
+    @apply mt-4;
   }
 
   #content ul, ol {
@@ -37,13 +37,13 @@
   }
 
   #content a {
-    @apply underline text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
+    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
   }
 }
 
 @layer components {
   .link {
-    @apply underline text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
+    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
   }
 }
 
