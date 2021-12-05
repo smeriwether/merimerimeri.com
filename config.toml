@@ -46,3 +46,7 @@ paginate = 10
   url = '/contact/'
   weight = 3
   
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
