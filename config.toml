@@ -2,6 +2,8 @@ baseURL = "https://merimerimeri.com/"
 languageCode = "en-us"
 title = "merimerimeri.com"
 enableRobotsTXT = true
+sectionPagesMenu = "main"
+paginate = 10
 
 [sitemap]
   changefreq = "weekly"
@@ -9,8 +11,38 @@ enableRobotsTXT = true
   priority = 0.5
 
 [params]
-  title = "merimerimeri.com - Stephen Meriwether's home on the internet."
-  description = "Stephen Meriwether's home on the internet and his blog where he writes about technology, the internet, and his life."
+  title = "merimerimeri.com - A blog by Stephen Meriwether's"
+  description = "A blog by Stephen Meriwether. He writes about technology, the internet, and his life."
 
 [author]
   name = "Stephen Meriwether"
+
+[menu]
+[[menu.main]]
+  identifier = 'blog'
+  name = 'blog'
+  title = 'Blog'
+  url = '/blog/'
+  weight = -1
+
+[[menu.main]]
+  identifier = 'essays'
+  name = 'essays'
+  title = 'Essays'
+  url = '/essays/'
+  weight = 1
+  
+[[menu.main]]
+  identifier = 'about'
+  name = 'about'
+  title = 'About'
+  url = '/about/'
+  weight = 2
+  
+[[menu.main]]
+  identifier = 'contact'
+  name = 'contact'
+  title = 'Contact'
+  url = '/contact/'
+  weight = 3
+  

@@ -5,6 +5,10 @@ slug = "the-struggles-of-a-dying-business"
 title = "The Struggles of a Dying Business"
 +++
 
+Working on a business that's dying is a lot harder than I thought it would be.
+
+<!--more-->
+
 Last week was the penultimate Sprint Review at my engagement (I work as a Consultant at [Stride Consulting](https://stridenyc.com)) 
 and only two people showed up. This was down from a couple dozen in its heyday, and the two that did show weren't 
 stakeholders. The business is being sold, not because it did extraordinarily well but because it didn't live up 

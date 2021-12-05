@@ -32,23 +32,25 @@
     background-color: rgba(226, 221, 215, 0.4);
   }
 
-  #content img {
-    @apply mb-4 m-auto;
-  }
-
   #content a {
-    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
+    @apply text-indigo-600 hover:text-indigo-800
   }
-}
 
-@layer components {
-  .link {
-    @apply text-indigo-600 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-200;
+  #content blockquote {
+    @apply border-l border-indigo-400 pl-4 text-gray-500;
   }
 }
 
 @layer utilities {
   @responsive {
+    .w-1000px {
+      width: 1000px;
+    }
+
+    .w-175px {
+      width: 175px;
+    }
+
     .w-104 {
       width: 26rem;
     }

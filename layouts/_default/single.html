@@ -1,34 +1,9 @@
 {{ define "main" }}
-  <main class="px-6 mb-10 px-4 max-w-2xl mx-auto text-lg md:text-lg md:px-2 md:mb-20" aria-role="main">
-    <div class="mt-10">
-      <a href="{{ .Site.BaseURL }}">
-        <picture class="flex justify-center">
-          <source srcset="{{.Permalink}}image.jp2" type="image/jp2">
-          <img src="{{.Permalink}}image.jpg" class="rounded" width="208" height="208" alt="" />
-        </picture>
-      </a>
-    </div>
+  <article class="ml-0 lg:ml-28">
+    {{ partial "article-header.html" . }}
 
-    <header class="mt-10">
-      <a href="{{ .Site.BaseURL }}">
-        <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-300">merimerimeri.com</span>
-        <h1 class="text-4xl md:text-5xl font-bold">{{ .Title }}</h1>
-      </a>
-
-      <span class="mt-2 text-sm text-gray-500 dark:text-gray-400">{{ .PublishDate.Format "January 2, 2006" }}</span>
-
-      <a href="{{ .Site.BaseURL }}" class="mt-4 flex items-center hover:border-none">
-        <picture>
-          <source srcset="/photo.jp2" type="image/jp2">
-          <img src="/photo.jpg" class="w-8 h-8 rounded-full" width="24" height="24" alt="A photo of Stephen Meriwether" />
-        </picture>
-
-        <p class="ml-2 text-gray-500 dark:text-gray-400">Stephen Meriwether</p>
-      </a>
-    </header>
-
-    <section id="content" class="text-lg mt-10">
+    <div id="content" class="mt-6 leading-relaxed lg:text-sm">
       {{ .Content }}
-    </section>
-  </main>
+    </div>
+  </article>
 {{ end }}

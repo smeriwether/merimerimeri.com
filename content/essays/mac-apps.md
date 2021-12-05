@@ -5,9 +5,11 @@ slug = "mac-apps"
 title = "Everyday Mac apps"
 +++
 
-_Updated 10/30/2021_
+The Mac apps that I use every day, updated regularly.
 
-Here are the Mac apps that I use every day. See below for a few words on how I use them.
+<!--more-->
+
+_Updated 10/30/2021_
 
 
 - 1Password
