@@ -11,8 +11,8 @@ paginate = 10
   priority = 0.5
 
 [params]
-  title = "merimerimeri.com - A blog by Stephen Meriwether's"
-  description = "A blog by Stephen Meriwether. He writes about technology, the internet, and his life."
+  title = "merimerimeri.com - A blog by Stephen Meriwether"
+  description = "A blog by Stephen Meriwether. Stephen writes about technology, the internet, and his life."
 
 [author]
   name = "Stephen Meriwether"
