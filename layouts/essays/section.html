@@ -1,18 +1,3 @@
 {{ define "main" }}
-  <section class="grid grid-cols-1 gap-12 lg:gap-24 lg:ml-28">
-    {{ $paginator := .Paginate (where site.RegularPages "Section" "essays") }}
-    {{ range $paginator.Pages }}
-      <article>
-        {{ partial "article-header.html" . }}
-
-        {{ partial "article-subheader.html" . }}
-
-        <div id="content" class="mt-6 leading-relaxed lg:text-sm">
-          {{ .Summary }}
-        </div>
-      </article>
-    {{ end }}
-
-    {{ partial "pagination.html" (dict "context" . "paginator" $paginator) }}
-  </section>
+  {{ partial "essays-layout.html" . }}
 {{ end }}

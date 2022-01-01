@@ -21,7 +21,7 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           {{ $active := or (eq $currentPage.Section .Name) (eq $currentPage.Title .Title) }}
-          {{ $active = or $active (and ($currentPage.IsHome) (eq .Name "blog")) }}
+          {{ $active = or $active (and ($currentPage.IsHome) (eq .Name "essays")) }}
 
           <a href="{{ .URL }}" title="{{ .Title }}" class="block group px-2 py-1 rounded {{ if $active }} bg-indigo-600 {{ end }} hover:bg-indigo-600">
             <span class="uppercase text-white font-medium">
