@@ -19,13 +19,6 @@ paginate = 10
 
 [menu]
 [[menu.main]]
-  identifier = 'blog'
-  name = 'blog'
-  title = 'Blog'
-  url = '/blog/'
-  weight = -1
-
-[[menu.main]]
   identifier = 'essays'
   name = 'essays'
   title = 'Essays'
