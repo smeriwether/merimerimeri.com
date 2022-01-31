@@ -1,7 +1,7 @@
 # merimerimeri.com
 
 [merimerimeri.com](https://merimerimeri.com) is my personal website. It's a simple static site that's served 
-via Mac Mini home server.
+via my Mac Mini home server.
 
 ## Making changes
 
