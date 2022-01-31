@@ -3,28 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  a {
+    @apply text-indigo-600 underline hover:text-indigo-800;
+  }
+
+  ul {
+    @apply list-disc list-inside mt-4 pl-3;
+  }
+
+  ol {
+    @apply list-decimal list-inside mt-4 pl-3;
+  }
+
+  p {
+    @apply mt-8;
+  }
+
   #content h2 {
-    @apply text-2xl font-bold mb-2 pt-2 md:text-3xl;
+    @apply text-2xl font-bold mt-8;
   }
 
   #content h3 {
-    @apply text-lg font-bold mb-2 mt-10 md:text-xl;
+    @apply text-lg font-bold mt-6;
   }
 
   #content p {
     @apply mt-4;
-  }
-
-  #content ul, ol {
-    @apply ml-4 mb-5 mt-4;
-  }
-
-  #content ul {
-    @apply list-disc list-inside;
-  }
-
-  #content ol {
-    @apply list-decimal list-inside;
   }
 
   #content code {
@@ -32,27 +36,11 @@
     background-color: rgba(226, 221, 215, 0.4);
   }
 
-  #content a {
-    @apply text-indigo-600 hover:text-indigo-800
-  }
-
   #content blockquote {
     @apply border-l border-indigo-400 pl-4 text-gray-500;
   }
-}
 
-@layer utilities {
-  @responsive {
-    .w-1000px {
-      width: 1000px;
-    }
-
-    .w-175px {
-      width: 175px;
-    }
-
-    .w-104 {
-      width: 26rem;
-    }
+  #content ul,ol < code {
+    @apply inline;
   }
 }

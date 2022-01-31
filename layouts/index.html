@@ -1,3 +1,16 @@
 {{ define "main" }}
-  {{ partial "essays-layout.html" . }}
+  <main>
+    <header>
+      <picture>
+        <source srcset="photo.jp2" type="image/jp2">
+        <source srcset="photo.webp" type="image/webp">
+        <source srcset="photo.jpg" type="image/jpeg">
+        <img src="photo.jpg" height="150" width="150" class="rounded" alt="">
+      </picture>
+
+      <h1 class="mt-4 text-2xl font-bold">Hi, I'm Stephen.</h1>
+    </header>
+
+    {{ .Content }}
+  </main>
 {{ end }}

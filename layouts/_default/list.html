@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <main>
+<main>
     <nav>
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -8,15 +8,21 @@
         <span>Go home</span>
       </a>
     </nav>
-
     <article>
       <header class="mt-8">
         <h1 class="text-3xl font-bold">{{ .Title }}</h1>
       </header>
 
-      <div id="content" class="mt-6">
-        {{ .Content }}
-      </div>
+      {{.Content}}
+
+      <ul class="mt-8">
+        {{ range .Pages }}
+          <li class="mt-2">
+            <a href="{{.Permalink}}">{{.Title}}</a>
+            <span class="hidden md:inline md:text-sm">({{.Date.Format "2006-01-02"}})</span>
+          </li>
+        {{ end }}
+      </ul>
     </article>
-  </main>
+</main>
 {{ end }}

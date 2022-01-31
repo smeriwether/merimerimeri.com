@@ -4,56 +4,12 @@
     {{ partial "head.html" . }}
   </head>
 
-  <body class="bg-white text-gray-800">
-    <nav class="bg-indigo-600 text-white lg:h-4">
-      <div class="flex justify-between items-center p-4 lg:hidden">
-        <a href="/">
-          <h1 class="text-2xl font-bold text-white leading-none">merimerimeri.com</h1>
-          <span class="text-xs italic text-white">A blog by Stephen Meriwether</span>
-        </a>
+  <body class="bg-white text-gray-800 p-6 leading-loose lg:max-w-screen-md lg:mx-auto lg:p-12">
+    {{ block "main" . }}{{ end }}
 
-        <svg id="menu-button" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </div>
-
-      <div id="menu" class="hidden grid grid-cols-1 gap-3 p-4 bg-indigo-500">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-          {{ $active := or (eq $currentPage.Section .Name) (eq $currentPage.Title .Title) }}
-          {{ $active = or $active (and ($currentPage.IsHome) (eq .Name "essays")) }}
-
-          <a href="{{ .URL }}" title="{{ .Title }}" class="block group px-2 py-1 rounded {{ if $active }} bg-indigo-600 {{ end }} hover:bg-indigo-600">
-            <span class="uppercase text-white font-medium">
-              {{- .Name -}}
-            </span>
-          </a>
-        {{ end }}
-      </div>
-    </nav>
-
-    <main class="w-full mx-auto flex p-6 mt-2 lg:w-1000px lg:mt-20" role="main">
-      {{ partial "sidebar.html" . }}
-
-      {{ block "main" . }}{{ end }}
-    </main>
-
-    <footer class="flex flex-col items-center justify-center mt-8 mb-6 mb-4 lg:mt-24">
-      <p class="text-xs italic">copyright 2021, Stephen Meriwether</p>
-      <p class="mt-2 text-xs italic">made with love in Rochester, New York</p>
+    <footer class="mt-16 text-center">
+      <span class="block text-sm italic">copyright 2021, Stephen Meriwether</span>
+      <span class="block text-sm italic">made with love in Rochester, New York</span>
     </footer>
   </body>
-
-  <script>
-    document.getElementById('menu-button').onclick = function showMenu() {
-      var menu = document.getElementById('menu');
-      if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        menu.classList.add('block');
-      } else {
-        menu.classList.remove('block');
-        menu.classList.add('hidden');
-      }
-    }
-  </script>
 </html>
