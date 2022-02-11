@@ -3,14 +3,14 @@
 [merimerimeri.com](https://merimerimeri.com) is my personal website. It's a simple static site that's served 
 via my Mac Mini home server.
 
-## Making changes
+## Making changes in development
 
 This is a [Hugo](https://gohugo.io) static site. Start the server by running
 `hugo server -D`, changes are automatically picked up.
 
 ## Building for production
 
-This site uses [TailwindCSS](https://tailwindcss.com) which requires an extra environment variable when building.
+This site uses [Tailwind CSS](https://tailwindcss.com) which requires an extra environment variable when building.
 You can build for production using `NODE_ENV=production hugo --gc --minify`.
 
 ## Copyright & Fair Use
