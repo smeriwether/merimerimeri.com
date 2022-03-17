@@ -15,6 +15,9 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="apple-touch-icon.jpg" sizes="180x180">
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 
 {{ $styles := resources.Get "css/main.css" | resources.PostCSS }}
 {{ if (eq (getenv "NODE_ENV") "production") }}
