@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section>
+  <header class="mb-8">
+    <h1 class="text-2xl lg:text-3xl mb-8">My words</h1>
+    <span>I don't write much but when I do it'll show up here.</span>
+  </header>
+
+  <ol class="list-disc list-inside ml-2">
+    {% for post in site.posts %}
+      <li class="mb-4">
+        <p><a href="{{ post.url }}" class="link">{{ post.title }}</a> <span class="text-sm">({{ post.date| date: "%Y-%m-%d" }})</span></p>
+      </li>
+    {% endfor %}
+  </ol>
+</section>

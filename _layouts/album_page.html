@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign album = page.album %}
+
+<header class="mb-4 flex flex-col lg:flex-row lg:justify-between lg:items-center">
+  <h1 class="font-bold text-2xl lg:text-3xl mb-4">{{ album.name }}</h1>
+  <p class="text-sm italic">Taken {{ album.date }}</p>
+</header>
+
+<div class="mb-8 flex flex-col lg:flex-row lg:justify-between lg:items-center">
+  <p class="mb-4">{{ album.description }}</p>
+  <p class="hidden lg:block lg:text-xs lg:italic">Click on any picture to see it in full-resolution.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {% for photo in album.photos %}
+    <a href="{{ photo.url }}" target="_blank" class="transform transition duration-500 hover:scale-105">
+      <img src="{{ photo.url }}" alt="" width="400px" height="400px"/>
+    </a>
+  {% endfor %}
+</div>

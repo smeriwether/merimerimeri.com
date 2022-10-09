@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<header class="mb-8">
+  <h1 class="text-2xl lg:text-3xl">My photos</h1>
+</header>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6">
+  {% for album in site.data.albums %}
+    <section class="bg-white border border-gray-200 p-4">
+      <header class="mb-4">
+        <h2 class="text-lg">{{ album.name }}</h2>
+        <span class="block text-xs italic">{{ album.date }}</span>
+      </header>
+
+      <ul class="flex flex-row mb-6">
+        {% for photo in album.album_art %}
+          <li class="mr-2">
+            <img src="{{ photo.url }}" alt="" width="200px" height="200px"/>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div>
+        <a href="/album/{{ album.href }}" class="link">See all photos</a>
+      </div>
+    </section>
+  {% endfor %}
+</div>
