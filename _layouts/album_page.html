@@ -17,7 +17,7 @@ layout: default
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {% for photo in album.photos %}
     <a href="{{ photo.url }}" target="_blank" class="transform transition duration-500 hover:scale-105">
-      <img src="{{ photo.url }}" alt="" width="400px" height="400px"/>
+      <img data-src="{{ photo.url }}" alt="" width="400px" height="400px" class="lazyload" />
     </a>
   {% endfor %}
 </div>
