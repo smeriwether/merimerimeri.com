@@ -11,7 +11,7 @@ layout: default
   <ol class="list-disc list-inside ml-2">
     {% for post in site.posts %}
       <li class="mb-4">
-        <p><a href="{{ post.url }}" class="link">{{ post.title }}</a> <span class="text-sm">({{ post.date| date: "%Y-%m-%d" }})</span></p>
+        <p class="inline"><a href="{{ post.url }}" class="link">{{ post.title }}</a> <span class="text-sm">({{ post.date| date: "%Y-%m-%d" }})</span></p>
       </li>
     {% endfor %}
   </ol>
