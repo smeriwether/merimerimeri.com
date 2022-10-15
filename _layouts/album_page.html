@@ -1,12 +1,13 @@
 ---
 layout: default
+date: {% page.date %}
 ---
 
 {% assign album = page.album %}
 
 <header class="mb-4 flex flex-col lg:flex-row lg:justify-between lg:items-center">
   <h1 class="font-bold text-2xl lg:text-3xl mb-4">{{ album.name }}</h1>
-  <p class="text-sm italic">Taken {{ album.date }}</p>
+  <p class="text-sm italic">Taken {{ album.when }}</p>
 </header>
 
 <div class="mb-8 flex flex-col lg:flex-row lg:justify-between lg:items-center">

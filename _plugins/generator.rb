@@ -20,7 +20,8 @@ module AlbumPagePlugin
       @name     = @basename + @ext
 
       @data = {
-        "album" => album
+        "album" => album,
+        "date" => album['date']
       }
 
       # Set the page :type, which links the page details (layout, etc) via the _config.yaml
