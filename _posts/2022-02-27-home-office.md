@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "My Home Office Setup"
+last_modified_at: 2022-10-15 6:00:00 +0000
 ---
 
 Since the beginning of the pandemic I, like most people, have been working from home. I also 
@@ -16,23 +17,25 @@ I use the [Jarvis Bamboo Standing Desk](https://www.fully.com/standing-desks/jar
 a sit-stand desk from Fully, specifically the 60-inch by 30-inch bamboo desktop with a programmable sit-stand frame. 
 The size is perfect, I don't think I'll ever get a smaller table top to use as my primary office table. The sit-stand 
 frame is great too, with a click of a button I can sit or stand at the perfect height for me. I haven't owned the 
-table top long enough to comment on it's durability 
-but so far I'm loving it.
+table top long enough to comment on it's durability but so far I'm loving it.
+
+Sitting on top of my desk is the [Grovemade Desk Shelf](https://grovemade.com/product/wood-desk-shelf/?initial=342). I love how the 
+Maple looks on top of the Bamboo desk and the extra organization keeps my desk clean. The metal shelf is a great place to store a Macbook when
+not in use.
 
 ## My laptop
 
-Most of the day I'm working on a work-issued [2016 15-inch MacBook Pro](https://support.apple.com/kb/SP749?locale=en_US). It 
-sits in clamshell mode, though I lay it flat just in case I need to open it to reconnect something. My personal laptop, 
+Most of the day I'm working on a work-issued [2021 14-inch MacBook Pro](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch) with an M1 Pro processor. It 
+sits in clamshell mode nestled tightly into a [Grovemade MacBook Dock](https://grovemade.com/product/wood-macbook-dock/?initial=637), My personal laptop, 
 and the laptop I'm currently typing this on, is a [2021 14-inch MacBook Pro](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch) 
-with a M1 Max processor. This laptop is the best computer I've ever owned. The screen is gorgeous, I love the new design, 
-and the keyboard is nicer than any MacBook before it. The M1 Max is definitely overpowered for my needs but I wanted 
-32 GBs of RAM. It's worth saying again, this laptop is the best computer I've ever owned.
+with a M1 Max processor. These new Macbook Pros are the best computers I've ever used. The screen is gorgeous, I love the new design, 
+and the keyboard is nicer than any MacBook before it. The M1 Max in my personal computer is definitely overpowered for my needs but I wanted 
+32 GBs of RAM. It's worth saying again, this laptop is the best computer I've ever used.
 
 ## My monitor
 
-I use the [Dell S2722QC 27-inch 4K monitor](https://www.amazon.com/gp/product/B09DTDRJWP/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). When 
-looking for a new monitor my priorities were: price, size, pixels-per-inch - in that order. This monitor is… fine. But 
-I think that's the state of the monitor market, everything is mostly fine. I mount the monitor on the 
+I use the [Apple Studio Display](https://www.apple.com/studio-display/). I have a few complaints (the webcam is atrocious) but it's the monitor
+I've wanted for years. 5k is the perfect resolution for Macs and I'm thrilled to finally have it. I mount the monitor on the 
 [Fully Jarvis Monitor Mounting Arm](https://www.amazon.com/gp/product/B071G4LZNY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). The arm 
 holds my monitor fine and I appreciate the mobility and extra desk space. My only complaint about the mounting arm is that I 
 wish it were a tad smaller, it's quite bulky. 
@@ -52,10 +55,12 @@ meetings. I value an out-of-camera mic more than I do on-the-fly adjustments.
 
 ## My webcam
 
-I use the [Logitech C920S HD Pro 1080p Webcam with Privacy Shutter](https://www.amazon.com/gp/product/B081VQHJSC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). 
-Any 1080p webcam would be an upgrade over the 720p webcam in my work-issued MacBook Pro. In early 2020 my home office became a 
-corner in my bedroom so apart from it being a decent webcam the privacy shutter was a must-have. After multiple iterations of home 
-office accessories this Logitech webcam has stuck around. 
+I use the [Elagot Facecam](https://www.elgato.com/en/facecam). I wish I could just use the webcam on my monitor but, I'll say it again,
+it's atrocious. I've owned a number of different webcams over the years and the Elgato produces the best results. Apart from great video
+quality, another big selling point for me was the ability to save the webcam settings on the device. I switch laptops quite frequently (between 
+personal and work) so being able to get consistent quality without fuss is a big deal.
+
+The Facecam is mounted on the [Elgato Multi-Mount](https://www.elgato.com/en/multi-mount-system) to keep it at the right distance from my face.
 
 ## My headphones
 
@@ -95,13 +100,6 @@ Underneath the keyboard and mouse is the [Orbitkey Desk Mat](https://www.orbitke
 I have the “Large” sized mat and it fits on my desk perfectly. The “Quick Access Toolbar” is a great idea, I keep a pen and chapstick in it. And 
 the “Magnetic Cable Organizer” is a wonderful companion to a wired keyboard. The desk mat looks and feels premium and I'm really happy with it.
 
-## My lighting
-
-A recent (late 2021) addition to my Home Office is the [Elgato Key Light](https://www.elgato.com/en/key-light). My desk is in front of a window 
-which provides plenty of natural light during the day. But at night, the lack of ceiling lights made it so that it was nearly impossible to look 
-even decent on evening Zoom calls. With the Key Light that problem mostly goes away. It's probably overkill for what I need, I keep the brightness 
-pretty low, so besides the fact that I could've saved some money I'm happy with my purchase.
-
 ## My other accessories
 
 The thing that connects it all together is the [Anker 577 Thunderbolt Dock](https://us.anker.com/products/a8396). Everything on my desk plugs into 
@@ -110,17 +108,11 @@ my needs and the single cable makes it so easy to switch my personal laptop in p
 dock so far is that the ethernet port stopped working less than one month after I bought it, thankfully before the Amazon return window. I replaced 
 it with another model that'll hopefully hold up better this time.
 
-I use the [Elgato Stream Deck MK.2](https://www.elgato.com/en/stream-deck-mk2) for quick access to apps and websites I use frequently throughout the 
-day. Even though I use the Stream Deck multiple times a day, out of everything in my Home Office it's the thing I need the least. It's a luxury but a 
-luxury that's worth it to me.
-
 To keep things off of my desk I use the [APPHOME Headphone Hook](https://www.amazon.com/gp/product/B07ZRJ7T36/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) 
 and the [Cup-Holster Cup Holder](https://www.amazon.com/gp/product/B07RVDMRYC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for my headphones and water 
 bottle, respectively. Before I bought a larger desk the need was practical, now it's because I prefer the look of having fewer things on my desk.
 
-To keep things under my desk I have the [TAP-UP Cable Box](https://www.amazon.com/gp/product/B086VZ72ZP/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). It 
-works okay, I like the built-in cable organizer on the desk clamp, but it's so big. I'd like to switch this out for something smaller but it's under the 
-desk (i.e. out of eye sight) so it's not such a big deal.
+I use the [DeltaHub Carpio](https://deltahub.io/products/carpio-2) to improve the ergonomics of using a mouse. I'm not entirely sure if it "works" or not but 
+after many months of use I can't image not using it.
 
-
-*This guide was last updated in February 2022.*
+*This guide was last updated in October 2022.*
