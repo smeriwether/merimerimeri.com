@@ -2,6 +2,7 @@
 layout: post
 title:  "My Home Office Setup"
 last_modified_at: 2022-10-15 6:00:00 +0000
+tag: favorite
 ---
 
 Since the beginning of the pandemic I, like most people, have been working from home. I also 

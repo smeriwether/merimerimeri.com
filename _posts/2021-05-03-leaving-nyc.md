@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "On leaving NYC"
+tag: favorite
 ---
 
 Last weekend, after nearly 4 years, I left New York City.
