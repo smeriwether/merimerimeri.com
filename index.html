@@ -46,8 +46,8 @@ layout: default
       {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
       {% for photo in sorted_photos %}
         <li class="grow h-25vh m-1">
-          <a href="/photo/{{ photo.filename }}" target="_blank" aria-label="Click to learn more">
-            <img data-src="{{ photo.thumbnail_url }}" alt="" class="photo lazyload transform transition duration-500 hover:scale-105" />
+          <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
+            <img data-src="{{ photo.thumbnail_url }}" alt="" class="lazyload photo transform transition duration-500 hover:scale-105" />
           </a>
         </li>
       {% endfor %}

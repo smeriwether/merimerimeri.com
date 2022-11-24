@@ -18,6 +18,18 @@ layout: default
   <span class="mr-2"><i>ISO</i>: {{ metadata.iso }}</span>
 </div>
 
-<div class="w-full">
-  <img src="{{ image.full_size_url }}" alt="" />
+<div class="w-full flex flex-col items-center">
+  <img src="{{ image.full_size_url }}" alt="" onLoad="imageLoaded();" />
+  <p id="loading" class="mt-16">Loading...</p>
 </div>
+
+<script type="text/javascript">
+  function imageLoaded() {
+    var element = document.getElementById('loading');
+    element.style.cssText = 'display:none;';
+  }
+
+  setTimeout(function(){
+    imageLoaded();
+  }, 1000);
+</script>
