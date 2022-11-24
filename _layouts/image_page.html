@@ -12,8 +12,8 @@ layout: default
   </p>
   <p class="font-bold text-lg mb-2">Taken on a {{ metadata.camera_model }}</p>
   <p class="text-sm mb-4">{{ image_date }}</p>
-  <span class="mr-2"><i>Focal Length (in 35mm)</i>: {{ metadata.focal_length_in_35mm }}</span>
-  <span class="mr-2"><i>Aperature</i>: {{ metadata.aperature }}</span>
+  <span class="mr-2"><i>Focal Length</i>: {{ metadata.focal_length_in_35mm }}mm</span>
+  <span class="mr-2"><i>Aperature</i>: f{{ metadata.aperature }}</span>
   <span class="mr-2"><i>Shutter Speed</i>: {{ metadata.shutter_speed }}</span>
   <span class="mr-2"><i>ISO</i>: {{ metadata.iso }}</span>
 </div>
