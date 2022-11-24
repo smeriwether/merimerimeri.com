@@ -29,10 +29,10 @@ github_username:  smeriwether
 
 defaults:
   - scope:
-      type: album
+      type: image
     values:
-      layout: album_page
-      permalink: album/:album
+      layout: image_page
+      permalink: photo/:image
 
 plugins:
   - jekyll-postcss

@@ -2,36 +2,28 @@
 layout: default
 ---
 
-<section>
-  <header class="mb-4">
+<section class="mb-24">
+  <header class="flex flex-col items-center justify-center mb-16">
+    <picture>
+      <source srcset="/assets/photo.jp2" type="image/jp2">
+      <source srcset="/assets/photo.webp" type="image/webp">
+      <source srcset="/assets/photo.jpg" type="image/jpeg">
+      <img src="photo.jpg" height="125px" width="125px" class="rounded-full mb-8" alt="">
+    </picture>
+
     <h1 class="text-2xl lg:text-3xl">Hi, I'm Stephen.</h1>
   </header>
-
-  <div class="mb-10">
-    <p>
-      I'm Stephen Meriwether, I go by "Stephen" (pronounced "Steven"). This is my personal website.
-    </p>
-  </div>
 
   <div class="mb-10">
     <p class="mb-2">
       <span class="font-bold text-lg">A little about me</span>
     </p>
     <p>
-      I live in Rochester, New York with my partner <a href="https://www.malaynahocker.com" class="link" target="_blank">Malayna Hocker</a>. I work as a Software Engineer
-      and Engineering Manager at <a href="https://stridenyc.com" class="link" target="_blank">Stride Consulting</a>. All of my income comes from my job at Stride and a
+      I'm Stephen Meriwether, I go by "Stephen" (pronounced "Steven"). I live in Rochester, New York with my fiance
+      <a href="https://www.malaynahocker.com" class="link" target="_blank">Malayna Hocker</a>. I work as a Software Engineer
+      and Engineering Manager at <a href="https://stridenyc.com" class="link" target="_blank">Stride Consulting</a>. I make all of my income from my job at Stride and a
       few years ago I decided to make my <a href="https://docs.google.com/spreadsheets/d/1WduTHPTiD9JnSZd2HgRURSXuft9VeuAl/edit?usp=sharing&ouid=109736149676047942865&rtpof=true&sd=true" class="link" target="_blank">income public</a>.
-      I occasionally have fun talking on the <a href="https://themodern.fm" class="link" target="_blank">Modern Podcast Network</a> with my friend.
-    </p>
-  </div>
-
-  <div class="mb-10">
-    <p class="mb-2">
-      <span class="font-bold text-lg">What I use my website for</span>
-    </p>
-    <p>
-      I've been interested with technology for as long as I can remember and, recently, I've started to dabble with photography.
-      I use this website to share my thoughts on what’s happening in tech, to share the photos I've taken, and sometimes to share life milestones.
+      I talk on the <a href="https://themodern.fm" class="link" target="_blank">Modern Podcast Network</a> with my best friend. I occasionally take photos, my favorites are listed below.
     </p>
   </div>
 
@@ -40,12 +32,25 @@ layout: default
       <span class="font-bold text-lg">How to get in touch</span>
     </p>
     <p>
-      I love getting emails! If you want to chat please feel free to email me at <a href="mailto:stephen@merimerimeri.com" class="link">stephen@merimerimeri.com</a>.
-      If email isn't your thing you also message me on <a href="https://twitter.com/_smeriwether" class="link" target="_blank">Twitter</a>.
+      I love getting emails! If you want to chat please email me at <a href="mailto:stephen@merimerimeri.com" class="link">stephen@merimerimeri.com</a>.
+      If email isn't your thing you can also message me on <a href="https://twitter.com/_smeriwether" class="link" target="_blank">Twitter</a>.
     </p>
   </div>
+</section>
 
+<section class="flex justify-center">
   <div>
-    <p>Thanks for visiting!</p>
+    <p class="text-right italic text-sm mb-2">Click on any image to learn more</p>
+
+    <ul class="flex flex-wrap">
+      {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
+      {% for photo in sorted_photos %}
+        <li class="grow h-25vh m-1">
+          <a href="/photo/{{ photo.filename }}" target="_blank" aria-label="Click to learn more">
+            <img data-src="{{ photo.thumbnail_url }}" alt="" class="photo lazyload transform transition duration-500 hover:scale-105" />
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>

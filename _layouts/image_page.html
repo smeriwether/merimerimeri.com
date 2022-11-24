@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign image = page.image %}
+{% assign metadata = page.metadata %}
+{% assign image_date = image.date | date: "%B %d, %Y" %}
+
+<div class="w-full mb-10 text-center">
+  <p class="mb-6">
+    <a href="/" class="underline">Go back home</a>
+  </p>
+  <p class="font-bold text-lg mb-2">Taken on a {{ metadata.camera_model }}</p>
+  <p class="text-sm mb-4">{{ image_date }}</p>
+  <span class="mr-2"><i>Focal Length (in 35mm)</i>: {{ metadata.focal_length_in_35mm }}</span>
+  <span class="mr-2"><i>Aperature</i>: {{ metadata.aperature }}</span>
+  <span class="mr-2"><i>Shutter Speed</i>: {{ metadata.shutter_speed }}</span>
+  <span class="mr-2"><i>ISO</i>: {{ metadata.iso }}</span>
+</div>
+
+<div class="w-full">
+  <img src="{{ image.full_size_url }}" alt="" />
+</div>

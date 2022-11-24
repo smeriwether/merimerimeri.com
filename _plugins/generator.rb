@@ -1,38 +1,39 @@
-module AlbumPagePlugin
-  class AlbumPagePageGenerator < Jekyll::Generator
+module ImagePagePlugin
+  class ImagePagePageGenerator < Jekyll::Generator
     safe true
 
     def generate(site)
-      site.data["albums"].map do |album|
-        site.pages << AlbumPage.new(site, album)
+      site.data["photos"].map do |image|
+        site.pages << ImagePage.new(site, image)
       end
     end
   end
 
-  class AlbumPage < Jekyll::Page
-    def initialize(site, album)
+  class ImagePage < Jekyll::Page
+    def initialize(site, image)
       @site = site
       @base = site.source
-      @dir  = album['href']
+      @dir  = image['filename']
 
       @basename = @dir
       @ext      = ".html"
       @name     = @basename + @ext
 
       @data = {
-        "album" => album,
-        "date" => album['date']
+        "image" => image,
+        "date" => image['date'],
+        "metadata" => image['metadata']
       }
 
       # Set the page :type, which links the page details (layout, etc) via the _config.yaml
       data.default_proc = proc do |_, key|
-        site.frontmatter_defaults.find(relative_path, :album, key)
+        site.frontmatter_defaults.find(relative_path, :image, key)
       end
     end
 
     def url_placeholders
       {
-        album: @dir,
+        image: @dir,
       }
     end
   end
