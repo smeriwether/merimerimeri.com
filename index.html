@@ -8,7 +8,7 @@ layout: default
       <source srcset="/assets/photo.jp2" type="image/jp2">
       <source srcset="/assets/photo.webp" type="image/webp">
       <source srcset="/assets/photo.jpg" type="image/jpeg">
-      <img src="photo.jpg" height="125px" width="125px" class="rounded-full mb-8" alt="">
+      <img src="photo.jpg" height="125px" width="125px" class="rounded-full mb-8" alt="" fetchpriority="high">
     </picture>
 
     <h1 class="text-2xl lg:text-3xl">Hi, I'm Stephen.</h1>
@@ -47,7 +47,7 @@ layout: default
       {% for photo in sorted_photos %}
         <li class="grow h-25vh m-1">
           <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
-            <img data-src="{{ photo.thumbnail_url }}" alt="" class="lazyload photo transform transition duration-500 hover:scale-105" />
+            <img loading="lazy" src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />
           </a>
         </li>
       {% endfor %}
