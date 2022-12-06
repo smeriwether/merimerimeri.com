@@ -21,6 +21,6 @@ class LocalImageFinder
   end
 
   def local_website_images_folder
-    "/Users/srm/Pictures/Website Photos"
+    "/Users/srm/Pictures/Photos/Website"
   end
 end
