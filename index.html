@@ -44,7 +44,7 @@ layout: default
 
     <ul class="flex flex-wrap">
       {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
-      {% for photo in sorted_photos %}
+      {% for photo in sorted_photos, limit:75 %}
         <li class="grow h-25vh m-1">
           <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
             <img loading="lazy" src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />

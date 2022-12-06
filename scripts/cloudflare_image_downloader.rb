@@ -7,8 +7,25 @@ class CloudflareImageDownloader
   end
 
   def download_all
+    page_count = 1
+    is_images_available = true
+    image_data = []
+
+    while(is_images_available) do
+      data = download_page(page_count)
+
+      is_images_available = data.length > 0
+      image_data = [*image_data, *data]
+      page_count = page_count + 1
+    end
+
+    puts "Found #{image_data.length} photos"
+    image_data
+  end
+
+  def download_page(n)
     response = HTTParty.get(
-      "https://api.cloudflare.com/client/v4/accounts/#{@account_id}/images/v1",
+      "https://api.cloudflare.com/client/v4/accounts/#{@account_id}/images/v1?page=#{n}&per_page=50",
       headers: {
         "Content-Type" => "application/json",
         "Authorization" => "Bearer #{@api_token}"
@@ -16,6 +33,8 @@ class CloudflareImageDownloader
     )
 
     result = JSON.parse(response.body)
+
+    puts result["result_info"]
 
     image_data = result["result"]["images"]
 
