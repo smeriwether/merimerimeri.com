@@ -47,7 +47,7 @@ layout: default
       {% for photo in sorted_photos limit:50 %}
         <li class="grow m-1 min-w-[50%] md:min-w-0 md:h-[25vh]">
           <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
-            <img loading="lazy" src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />
+            <img src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />
           </a>
         </li>
       {% endfor %}
