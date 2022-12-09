@@ -38,14 +38,14 @@ layout: default
   </div>
 </section>
 
-<section class="flex justify-center">
-  <div>
+<section class="flex flex-col items-center pb-8">
+  <div class="mb-8">
     <p class="text-right italic text-sm mb-2">Click on any image to learn more</p>
 
     <ul class="flex flex-wrap">
       {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
-      {% for photo in sorted_photos, limit:75 %}
-        <li class="grow h-25vh m-1">
+      {% for photo in sorted_photos limit:50 %}
+        <li class="grow m-1 min-w-[50%] md:min-w-0 md:h-[25vh]">
           <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
             <img loading="lazy" src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />
           </a>
@@ -53,4 +53,6 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+
+  <a class="underline" href="/photos">See all photos</a>
 </section>
