@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="flex flex-col items-center">
+  <header class="flex flex-col items-center justify-center mb-16">
+    <p class="mb-6">
+      <a href="/" class="underline">Go back</a>
+    </p>
+
+    <h1 class="text-xl lg:text-2xl">My photos</h1>
+  </header>
+
+  <div>
+    <p class="text-right italic text-sm mb-2">Click on any image to learn more</p>
+
+    <ul class="flex flex-wrap">
+      {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
+      {% for photo in sorted_photos %}
+        <li class="grow m-1 min-w-[50%] md:min-w-0 md:h-[25vh]">
+          <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
+            <img src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
