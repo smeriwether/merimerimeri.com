@@ -43,12 +43,16 @@ class CloudflareImageDownloader
       thumbnail_variant = image["variants"].select { |v| v.include?("thumbnails") }.first
       {
         filename: image["filename"],
-        full_size_variant: public_variant,
-        thumbnail_variant: thumbnail_variant,
+        full_size_variant: serve_on_custom_domain(public_variant),
+        thumbnail_variant: serve_on_custom_domain(thumbnail_variant),
       }
     end
   rescue => e
     puts "Error - Unable to download image data from cloudflare"
     raise e
+  end
+
+  def serve_on_custom_domain(cloudflare_link)
+    cloudflare_link.gsub("https://imagedelivery.net", "https://merimerimeri.com/cdn-cgi/imagedelivery")
   end
 end
