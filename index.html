@@ -19,11 +19,11 @@ layout: default
       <span class="font-bold text-lg">A little about me</span>
     </p>
     <p>
-      I'm Stephen Meriwether, I go by "Stephen" (pronounced "Steven"). I live in Rochester, New York with my fiance
-      <a href="https://www.malaynahocker.com" class="link" target="_blank">Malayna Hocker</a>. I work as a Software Engineer
+      I'm Stephen Meriwether-Hocker, I go by "Stephen" (pronounced "Steven"). I live in Rochester, New York with my wife
+      <a href="https://www.malaynahocker.com" class="link" target="_blank">Malayna Meriwether-Hocker</a>. I work as a Software Engineer
       and Engineering Manager at <a href="https://stride.build" class="link" target="_blank">Stride Consulting</a>. I make all of my income from my job at Stride and a
       few years ago I decided to make my <a href="https://docs.google.com/spreadsheets/d/1wPWFOqIiYhMc5oMziAY71al4OM9o65tD/edit?usp=sharing&ouid=107365966920596755883&rtpof=true&sd=true" class="link" target="_blank">income public</a>.
-      I write on my <a href="https://blog.merimerimeri.com" class="link">blog</a> and talk on <a href="https://themodern.fm" class="link" target="_blank">The Modern Podcast Network</a>. 
+      I sometimes talk on <a href="https://themodern.fm" class="link" target="_blank">The Modern Podcast Network</a>.
       I occasionally take photos, my favorites are listed below.
     </p>
   </div>
@@ -34,27 +34,19 @@ layout: default
     </p>
     <p>
       I love getting emails! If you want to chat please email me at <a href="mailto:stephen@merimerimeri.com" class="link">stephen@merimerimeri.com</a>.
-      If email isn't your thing you can also message me on <a href="https://twitter.com/_smeriwether" class="link" target="_blank">Twitter</a> or 
+      If email isn't your thing you can also message me on <a href="https://twitter.com/_smeriwether" class="link" target="_blank">Twitter</a> or
       <a rel="me" href="https://mastodon.social/@smeriwether" class="link" target="_blank">Mastodon</a>.
     </p>
   </div>
 </section>
 
-<section class="flex flex-col items-center pb-8">
-  <div class="mb-8">
-    <p class="text-right italic text-sm mb-2">Click on any image to learn more</p>
-
-    <ul class="flex flex-wrap">
-      {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
-      {% for photo in sorted_photos limit:50 %}
-        <li class="grow m-1 min-w-[50%] md:min-w-0 md:h-[25vh]">
-          <a href="/photo/{{ photo.filename }}" aria-label="Click to learn more">
-            <img src="{{ photo.thumbnail_url }}" alt="" class="photo transform transition duration-500 hover:scale-105" />
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+<section class="flex flex-col items-center pb-4">
+  <div class="mb-4">
+    <div class="flex flex-wrap">
+      <a data-flickr-embed="true" data-header="true" href="https://www.flickr.com/photos/stephenmeriwetherhocker/albums/72177720318172535" title="Favorites">
+        <img src="https://live.staticflickr.com/65535/53811357686_1401ff8727_b.jpg" width="1024" height="768" alt="Favorites"/>
+      </a>
+      <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    </div>
   </div>
-
-  <a class="underline" href="/photos">See all photos</a>
 </section>

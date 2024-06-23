@@ -27,13 +27,6 @@ url: "https://merimerimeri.com" # the base hostname & protocol for your site, e.
 twitter_username: _smeriwether
 github_username:  smeriwether
 
-defaults:
-  - scope:
-      type: image
-    values:
-      layout: image_page
-      permalink: photo/:image
-
 plugins:
   - jekyll-postcss
   - jekyll-sitemap
