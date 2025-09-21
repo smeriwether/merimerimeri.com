@@ -4,6 +4,7 @@ module.exports = {
     './_layouts/**/*.html',
     './_posts/*.md',
     './*.html',
+    './blog/**/*.html',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
