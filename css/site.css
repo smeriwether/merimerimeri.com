@@ -24,6 +24,20 @@ body {
     object-fit: cover;
     vertical-align: bottom;
   }
+
+  #content {
+    p {
+      @apply mb-4;
+    }
+
+    blockquote {
+      @apply border-l-4 border-gray-300 pl-4 mb-4 text-gray-700;
+    }
+
+    a {
+      @apply text-orange-800 underline hover:text-orange-900;
+    }
+  }
 }
 
 @layer components {
