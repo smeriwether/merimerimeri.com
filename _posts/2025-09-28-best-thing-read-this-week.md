@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The best thing I read this week: The Blank Page Revolution"
+title: "The Best Thing I Read This Week: The Blank Page Revolution"
 description: "Adjacent Possible author Steven Johnson describes the impact paper had on human thought and more."
 ---
 
