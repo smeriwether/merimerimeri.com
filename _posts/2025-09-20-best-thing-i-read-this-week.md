@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The best thing I read this week: AI Will Not Make You Rich"
+title: "The Best Thing I Read This Week: AI Will Not Make You Rich"
 description: "VC Jerry Neumann argues the AI boom will resemble shipping containerization: global benefits but few new fortunes."
 ---
 
