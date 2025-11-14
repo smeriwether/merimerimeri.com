@@ -4,7 +4,7 @@ title: "Derek Thompson: Whose Cup Are You Filling?"
 description: "Derek Thompson on attention, focus and pouring water into the right cups"
 ---
 
-Derek Thompson with an article that hit home.
+Derek Thompson on [Whose Cup Are You Filling?](https://www.derekthompson.org/p/whose-cup-are-you-filling) that hit home.
 
 > I am thinking of a game. The rules are simple. Every morning, you have a full pitcher of water and many empty cups. By day’s end, you pour all the water from the pitcher into the cups. The goal: Pour the water into the right cups.
 

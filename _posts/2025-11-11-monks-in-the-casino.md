@@ -4,7 +4,7 @@ title: "Derek Thompson: The Monks in the Casino"
 description: "Derek Thompson on the crisis of young men and life in the 21st century"
 ---
 
-Derek Thompson with another banger about the societal crisis facing young men and the trappings of modern life.
+Derek Thompson with another banger of an article titled [The Monks in the Casino](https://www.derekthompson.org/p/the-monks-in-the-casino) about the societal crisis facing young men and the trappings of modern life.
 
 > I’ve been thinking recently about these guys who are dating less, socializing less, and leaving their home less, while filling their media with more porn and betting parlays. They seem to prefer the financial discomfort of losing a bet to the social anxiety of being rejected on a date.
 
