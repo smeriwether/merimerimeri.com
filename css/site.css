@@ -25,6 +25,15 @@ body {
     vertical-align: bottom;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-black;
+  }
+
   #content {
     p {
       @apply mb-4;
@@ -35,23 +44,13 @@ body {
     }
 
     a {
-      @apply text-orange-800 underline hover:text-orange-900;
+      @apply underline hover:text-neutral-900;
     }
   }
 }
 
 @layer components {
   .link {
-    @apply text-orange-800 underline hover:text-orange-900;
-  }
-}
-
-@layer utilities {
-  .w-995px {
-    width: 995px;
-  }
-
-  .w-700px {
-    width: 700px;
+    @apply underline hover:text-neutral-900;
   }
 }
