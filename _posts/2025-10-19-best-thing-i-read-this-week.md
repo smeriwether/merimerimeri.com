@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Best Thing I Read This Week: The Most Precious Resource is Agency"
+title: "Simon Sarris: The Most Precious Resource is Agency"
 description: "Agency and the systematic dismantling of opportunities"
 ---
 

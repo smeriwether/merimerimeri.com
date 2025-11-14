@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Best Thing I Read This Week: Resiliency and Scale"
+title: "Ben Thompson: Resiliency and Scale"
 description: "Ben Thompson on how the internet is built for resiliency but scale economics get in the way."
 ---
 

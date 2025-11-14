@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Monks in the Casino"
+title: "Derek Thompson: The Monks in the Casino"
 description: "Derek Thompson on the crisis of young men and life in the 21st century"
 ---
 

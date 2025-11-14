@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Whose Cup Are You Filling?"
+title: "Derek Thompson: Whose Cup Are You Filling?"
 description: "Derek Thompson on attention, focus and pouring water into the right cups"
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Best Thing I Read This Week: Everything is Television"
+title: "Derek Thompson: Everything is Television"
 description: "Derek Thompson - How modern media consumption is converging toward episodic videos"
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "The Best Thing I Read This Week: AI Will Not Make You Rich"
+title: "Jerry Neumann: AI Will Not Make You Rich"
 description: "VC Jerry Neumann argues the AI boom will resemble shipping containerization: global benefits but few new fortunes."
 ---
 
-The best thing I read this week was an article from [Colossus: *AI Will Not Make You Rich*](https://joincolossus.com/article/ai-will-not-make-you-rich/), written by Venture Capitalist Jerry Neumann on who the real winners of the current AI boom will be.
+The best thing I read this week was an article from [Colossus: _AI Will Not Make You Rich_](https://joincolossus.com/article/ai-will-not-make-you-rich/), written by Venture Capitalist Jerry Neumann on who the real winners of the current AI boom will be.
 
 > A lot of the money pouring into AI is therefore being invested in the wrong places, and aside from a couple of lucky early investors, those who make money will be the ones with the foresight to get out early.
 
