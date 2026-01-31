@@ -1,6 +1,8 @@
 # merimerimeri.com
 
-My personal website, see it at [merimerimeri.com](merimerimeri.com).
+Website for MeriMeriMeri Software — a studio that helps teams build better software through consulting and creates focused, delightful products.
+
+See it live at [merimerimeri.com](https://merimerimeri.com).
 
 ## Development
 
