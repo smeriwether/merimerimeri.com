@@ -29,6 +29,13 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Cache Jekyll build
+        uses: actions/cache@v4
+        with:
+          path: .jekyll-cache
+          key: jekyll-${{ hashFiles('**/*.html', '**/*.md', '_config.yml') }}
+          restore-keys: jekyll-
+
       - name: Build Jekyll site
         run: bundle exec jekyll build
         env:
