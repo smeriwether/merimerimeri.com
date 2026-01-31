@@ -53,4 +53,48 @@ body {
   .link {
     @apply underline hover:text-neutral-900;
   }
+
+  /* Product Cards - Base */
+  .product-card {
+    @apply block p-5 rounded-lg no-underline transition-all duration-200;
+    @apply border;
+  }
+
+  .product-card:hover {
+    @apply no-underline;
+    transform: translateY(-1px);
+  }
+
+  .product-name {
+    @apply text-xl font-semibold mb-1;
+  }
+
+  .product-tagline {
+    @apply text-sm opacity-60;
+  }
+
+  /* MenuMines - Purple like the actual site */
+  .product-card.menumines {
+    @apply text-white;
+    background-color: #6b5b95;
+    border-color: #5a4a7a;
+  }
+
+  .product-card.menumines:hover {
+    background-color: #7a6aa4;
+    border-color: #6b5b95;
+  }
+
+  .product-card.menumines .product-tagline {
+    @apply opacity-70;
+  }
+
+  /* Historical Fantasy Football Stats - Green/data aesthetic */
+  .product-card.hffs {
+    @apply bg-emerald-50 border-emerald-200 text-emerald-900;
+  }
+
+  .product-card.hffs:hover {
+    @apply bg-emerald-100 border-emerald-300;
+  }
 }

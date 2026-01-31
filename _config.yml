@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: merimerimeri.com
+title: MeriMeriMeri Software
 email: stephen@merimerimeri.com
 description: >-
-  The personal website of Stephen Meriwether.
+  MeriMeriMeri Software LLC builds useful, delightful, and focused software products.
 baseurl: "/"
 url: "https://merimerimeri.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _smeriwether
