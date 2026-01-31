@@ -4,6 +4,20 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '_config.yml'
+      - '_includes/**'
+      - '_layouts/**'
+      - '_posts/**'
+      - 'assets/**'
+      - 'blog/**'
+      - 'css/**'
+      - '*.html'
+      - 'Gemfile*'
+      - 'package*.json'
+      - 'tailwind.config.js'
+      - 'postcss.config.js'
+      - '.github/workflows/deploy.yml'
 
 concurrency:
   group: deploy
@@ -12,6 +26,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
       deployments: write
