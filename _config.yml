@@ -28,11 +28,8 @@ twitter_username: _smeriwether
 github_username:  smeriwether
 
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
   - jekyll-sitemap
-
-postcss:
-  cache: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
