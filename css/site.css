@@ -53,4 +53,196 @@ body {
   .link {
     @apply underline hover:text-neutral-900;
   }
+
+  /* Product Cards - Base */
+  .product-card {
+    @apply block rounded-xl no-underline transition-all duration-300;
+    @apply border overflow-hidden;
+    position: relative;
+  }
+
+  .product-card:hover {
+    @apply no-underline;
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .product-content {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .product-content {
+      max-width: 65%;
+    }
+  }
+
+  .product-name {
+    @apply text-2xl font-bold mb-2;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .product-tagline {
+    @apply text-base;
+    opacity: 0.85;
+  }
+
+  /* MenuMines - Dark retro minesweeper aesthetic */
+  .product-card.menumines {
+    @apply text-white border-0;
+    background: linear-gradient(135deg, #1e2334 0%, #252a3f 100%);
+  }
+
+  .product-card.menumines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      linear-gradient(rgba(126, 110, 179, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(126, 110, 179, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+  }
+
+  .menumines-decoration {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    margin: 0 1.5rem 1.5rem;
+    width: fit-content;
+  }
+
+  @media (min-width: 640px) {
+    .menumines-decoration {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+  }
+
+  .mine-cell {
+    width: 28px;
+    height: 28px;
+    background: #2d3347;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: ui-monospace, monospace;
+    border: 1px solid rgba(126, 110, 179, 0.2);
+  }
+
+  .mine-cell.revealed {
+    background: #363c52;
+    border-color: rgba(126, 110, 179, 0.3);
+  }
+
+  .mine-cell.num-1 { color: #4a9eff; }
+  .mine-cell.num-2 { color: #4ade80; }
+  .mine-cell.num-3 { color: #f87171; }
+  .mine-cell.flag { color: #ef4444; }
+
+  .product-card.menumines:hover {
+    background: linear-gradient(135deg, #252a3f 0%, #2d3347 100%);
+  }
+
+  .product-card.menumines .product-name {
+    color: #a799d4;
+  }
+
+  .product-card.menumines .product-tagline {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* Historical Fantasy Football Stats - Sports data aesthetic */
+  .product-card.hffs {
+    @apply border-0;
+    background: linear-gradient(135deg, #1a3a28 0%, #234d36 100%);
+    color: white;
+  }
+
+  .product-card.hffs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.2) 100%);
+    pointer-events: none;
+  }
+
+  .hffs-decoration {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0 1.5rem 1.5rem;
+    width: fit-content;
+  }
+
+  @media (min-width: 640px) {
+    .hffs-decoration {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+  }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px;
+    gap: 0.5rem;
+    padding: 0.35rem 0.5rem;
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    color: #1a3a28;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .stats-row:last-child {
+    border-bottom: none;
+  }
+
+  .stats-row .player {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80px;
+  }
+
+  .stats-row .pts {
+    font-weight: 700;
+    color: #234d36;
+    text-align: right;
+  }
+
+  .stats-row .year {
+    color: #6b7280;
+    text-align: right;
+  }
+
+  .product-card.hffs:hover {
+    background: linear-gradient(135deg, #234d36 0%, #2d5f44 100%);
+  }
+
+  .product-card.hffs .product-name {
+    color: #86efac;
+  }
+
+  .product-card.hffs .product-tagline {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }

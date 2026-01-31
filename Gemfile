@@ -6,7 +6,7 @@ gem 'rss', '~> 0.2.9'
 gem 'webrick', '~> 1.9.1'
 
 group :jekyll_plugins do
-  gem 'jekyll-postcss'
+  gem 'jekyll-postcss-v2'
   gem 'jekyll-sitemap'
 end
 
