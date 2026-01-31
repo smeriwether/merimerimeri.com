@@ -245,4 +245,19 @@ body {
   .product-card.hffs .product-tagline {
     color: rgba(255, 255, 255, 0.8);
   }
+
+  /* The Modern promo */
+  .the-modern-promo {
+    @apply mt-8 text-sm;
+    color: #6b7280;
+  }
+
+  .the-modern-promo a {
+    @apply underline;
+    color: #c4784a;
+  }
+
+  .the-modern-promo a:hover {
+    color: #a5623a;
+  }
 }
