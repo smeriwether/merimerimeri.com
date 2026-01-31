@@ -24,7 +24,7 @@ description: >-
   MeriMeriMeri Software LLC builds useful, delightful, and focused software products.
 baseurl: "/"
 url: "https://merimerimeri.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: _smeriwether
+twitter_username: merisoft
 github_username:  smeriwether
 
 plugins:
