@@ -14,3 +14,7 @@ See it live at [merimerimeri.com](https://merimerimeri.com).
 ### Running the website
 
 `bundle exec jekyll serve`
+
+## Deployment
+
+Pushing to `main` triggers a GitHub Actions workflow that builds the Jekyll site and deploys it to Cloudflare Pages.
