@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal/company website for MeriMeriMeri Software — a Jekyll static site styled with Tailwind CSS, deployed to Cloudflare Pages.
+Website for MeriMeriMeri Software — a studio that builds focused, delightful software products. Jekyll static site styled with Tailwind CSS, deployed to Cloudflare Pages.
 
 ## Commands
 
@@ -55,6 +55,15 @@ Note: `_config.yml` changes require restarting the server.
 - Custom components defined in `css/site.css` using `@layer components` (e.g., `.product-card`, `.link`)
 - Base content styles in `@layer base` scoped under `#content` (blog post typography)
 - Body uses `font-serif` with max-width `650px`
+
+## Voice & Tone
+
+The site's voice is inspired by 37signals/Jason Fried, Derek Sivers, and Seth Godin:
+- Short, punchy sentences. Opinionated and direct.
+- Anti-bloat, pro-simplicity. Say what you believe, not just what you do.
+- No corporate speak or buzzwords.
+
+The focus is entirely on building products — no consulting or services language.
 
 ## Runtime Versions
 

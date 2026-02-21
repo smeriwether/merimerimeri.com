@@ -1,6 +1,6 @@
 # merimerimeri.com
 
-Website for MeriMeriMeri Software — a studio that helps teams build better software through consulting and creates focused, delightful products.
+Website for MeriMeriMeri Software — a studio that builds focused, delightful software products.
 
 See it live at [merimerimeri.com](https://merimerimeri.com).
 
