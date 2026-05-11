@@ -352,7 +352,7 @@ body {
     @apply border-0;
     background: radial-gradient(circle at top, #312e81 0%, #111827 44%, #0f172a 100%);
     color: white;
-    min-height: 13rem;
+    min-height: 10.5rem;
   }
 
   .product-card.foodfight::before {
