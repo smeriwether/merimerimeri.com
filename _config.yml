@@ -24,7 +24,7 @@ description: >-
   Personal site for Stephen Meriwether: software, AI, LLMs, projects, writing, and a few things worth keeping simple.
 baseurl: "/"
 url: "https://merimerimeri.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: _smeriwether
+twitter_username: stephenmhoc
 github_username:  smeriwether
 
 plugins:
