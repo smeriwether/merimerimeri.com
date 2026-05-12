@@ -444,6 +444,10 @@ body {
   }
 
   @media (min-width: 640px) {
+    .product-card.tabata {
+      min-height: 12.5rem;
+    }
+
     .product-card.tabata .product-content {
       max-width: 52%;
     }
