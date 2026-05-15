@@ -526,7 +526,6 @@ body {
   }
 
   .samesy-window-title,
-  .samesy-window-copy,
   .samesy-sentence,
   .samesy-result {
     position: relative;
@@ -539,13 +538,6 @@ body {
     font-size: 1.35rem;
     font-weight: 700;
     line-height: 1;
-  }
-
-  .samesy-window-copy {
-    color: #63706b;
-    font-size: 0.68rem;
-    font-weight: 750;
-    line-height: 1.15;
   }
 
   .samesy-sentence {
